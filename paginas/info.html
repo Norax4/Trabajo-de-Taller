@@ -93,25 +93,26 @@
           <h2 class="fs-3 text-center pt-2 m-0">Contáctanos</h2>
           <form>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label fs-5"
-                >Su email</label
+              <label for="userEmail" class="form-label fs-5"
+                >Su email  <abbr title="Este campo es obligatorio">*</abbr></label</label
               >
               <input
                 type="email"
                 class="form-control"
-                id="exampleFormControlInput1"
+                id="userEmail"
                 placeholder="name@example.com"
                 required
               />
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label fs-5"
+              <label for="userMessage" class="form-label fs-5"
                 >Escriba su consulta</label
               >
               <textarea
                 class="form-control"
-                id="exampleFormControlTextarea1"
+                id="userMessage"
                 rows="3"
+                maxlength="523"
                 required
               ></textarea>
             </div>
