@@ -1,0 +1,25 @@
+#contenedorImagen {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.imageSize{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.textoImagen {
+    position: absolute;
+    top: 10px; /* Ajusta esta posición según sea necesario */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translateX(-50%); /* Centra el texto horizontalmente */
+    color: white; /* Ajusta el color del texto para que contraste con la imagen */
+    background-color: rgba(0, 0, 0, 0.5); /* Opcional: Agrega un fondo semi-transparente para mejorar la legibilidad */
+    padding: 5px; /* Opcional: Agrega un poco de espacio alrededor del texto */
+    border-radius: 3px; /* Opcional: Redondea los bordes del fondo del texto */
+    font-size: xx-large;
+    margin-top: 15%;
+    margin-left: 15%;
+}
