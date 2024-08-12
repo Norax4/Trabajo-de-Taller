@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="/index.html">Te mando</a>
@@ -83,61 +83,69 @@
     <br />
     <br />
 
-    <div class="text-center">
-      <h4>Servicios Generales</h4>
-      <p style="padding-left: 70px; padding-right: 70px">
-        En la compañia de Te Mando ofrecemos una variedad de servicios
-        diferentes, ya sea envio de cartas o paquetes, a todos los departamentos
-        del país en cuestión de horas.
-      </p>
-    </div>
-    <br />
+    <main class="w-75 mx-auto flex-grow-1">
+      <div class="text-center">
+        <h4>Servicios Generales</h4>
+        <p style="padding-left: 70px; padding-right: 70px">
+          En la compañia de Te Mando ofrecemos una variedad de servicios
+          diferentes, ya sea envio de cartas o paquetes, a todos los
+          departamentos del país en cuestión de horas.
+        </p>
+      </div>
+      <br />
 
-    <div class="row">
-      <div class="col-4 mb-3 mb-sm-0">
-        <div class="card" style="width: 18rem; margin-left: 120px">
-          <div class="card-body">
-            <h5 class="card-title">Departamental</h5>
-            <p class="card-text">
-              Este servicio es para paquetes o cartas postales que son enviadas
-              dentro del departamento del remitente.
-            </p>
-            <a href="/paginas/envioForm.html" class="btn btn-primary"
-              >Elegir Servicio</a
-            >
+      <div class="row">
+        <div class="col-4 mb-3 mb-sm-0">
+          <div class="card" style="width: 18rem; margin-left: 120px">
+            <div class="card-body">
+              <h5 class="card-title">Departamental</h5>
+              <p class="card-text">
+                Este servicio es para paquetes o cartas postales que son
+                enviadas dentro del departamento del remitente.
+              </p>
+              <a href="/paginas/envioForm.html" class="btn btn-primary"
+                >Elegir Servicio</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem; margin-left: 50px">
+            <div class="card-body">
+              <h5 class="card-title">Interdepartamental</h5>
+              <p class="card-text">
+                Este servicio es para paquetes o cartas postales que son
+                enviadas fuera del departamento del remitente.
+              </p>
+              <a href="/paginas/envioForm.html" class="btn btn-primary"
+                >Elegir Servicio</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Hacia Argentina</h5>
+              <p class="card-text">
+                Este servicio es para paquetes que necesitan ir a Argentina,
+                ahora disponible cómo opción.
+              </p>
+              <br />
+              <a href="/paginas/envioForm.html" class="btn btn-primary"
+                >Elegir Servicio</a
+              >
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-4">
-        <div class="card" style="width: 18rem; margin-left: 50px">
-          <div class="card-body">
-            <h5 class="card-title">Interdepartamental</h5>
-            <p class="card-text">
-              Este servicio es para paquetes o cartas postales que son enviadas
-              fuera del departamento del remitente.
-            </p>
-            <a href="/paginas/envioForm.html" class="btn btn-primary"
-              >Elegir Servicio</a
-            >
-          </div>
-        </div>
+    </main>
+
+    <footer class="text-center bg-dark text-white py-3">
+      <div>
+        <p class="m-0">&copy; 2024 CTC</p>
       </div>
-      <div class="col-4">
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Hacia Argentina</h5>
-            <p class="card-text">
-              Este servicio es para paquetes que necesitan ir a Argentina, ahora
-              disponible cómo opción.
-            </p>
-            <br />
-            <a href="/paginas/envioForm.html" class="btn btn-primary"
-              >Elegir Servicio</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
