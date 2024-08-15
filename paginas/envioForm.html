@@ -84,11 +84,15 @@
 
     <main class="w-75 mx-auto flex-grow-1">
       <h1 class="text-center">Formulario de Envío</h1>
+      <p class="text-danger text-center">
+        * Las casillas marcadas con un asterisco son obligatorias
+      </p>
       <div class="container">
         <form id="formEnvio" novalidate>
           <div class="mb-3">
             <label for="nombreRemitente" class="form-label fw-bold"
-              >Nombre del Remitente</label
+              >Nombre del Remitente
+              <abbr title="Este campo es obligatorio">*</abbr></label
             >
             <input
               type="text"
@@ -103,7 +107,8 @@
 
           <div class="mb-3">
             <label for="direccionRemitente" class="form-label fw-bold"
-              >Dirección del Remitente</label
+              >Dirección del Remitente
+              <abbr title="Este campo es obligatorio">*</abbr></label
             >
             <textarea
               class="form-control"
@@ -118,7 +123,8 @@
 
           <div class="mb-3">
             <label for="nombreDestinatario" class="form-label fw-bold"
-              >Nombre del Destinatario</label
+              >Nombre del Destinatario
+              <abbr title="Este campo es obligatorio">*</abbr></label
             >
             <input
               type="text"
@@ -133,7 +139,8 @@
 
           <div class="mb-3">
             <label for="direccionDestinatario" class="form-label fw-bold"
-              >Dirección del Destinatario</label
+              >Dirección del Destinatario
+              <abbr title="Este campo es obligatorio">*</abbr></label
             >
             <textarea
               class="form-control"
@@ -148,7 +155,8 @@
 
           <div class="mb-3">
             <label for="pesoPaquete" class="form-label fw-bold"
-              >Peso del Paquete</label
+              >Peso del Paquete
+              <abbr title="Este campo es obligatorio">*</abbr></label
             >
             <input
               type="number"
@@ -163,7 +171,10 @@
           </div>
 
           <div class="mb-3">
-            <p class="fw-bold">Dimensiones del paquete</p>
+            <p class="fw-bold">
+              Dimensiones del paquete
+              <abbr title="Este campo es obligatorio">*</abbr>
+            </p>
 
             <div class="mb-3 row">
               <label for="largoDelPaquete" class="col-sm-2 col-form-label"
@@ -177,9 +188,9 @@
                   id="largoDelPaquete"
                   required
                 />
-              </div>
-              <div id="validacionLargoDelPaquete" class="invalid-feedback">
-                Por favor ingrese el largo del paquete en centímetros.
+                <div id="validacionLargoDelPaquete" class="invalid-feedback">
+                  Por favor ingrese el largo del paquete en centímetros.
+                </div>
               </div>
             </div>
 
@@ -195,9 +206,9 @@
                   id="anchoDelPaquete"
                   required
                 />
-              </div>
-              <div id="validacionAnchoDelPaquete" class="invalid-feedback">
-                Por favor ingrese el ancho del paquete en centímetros.
+                <div id="validacionAnchoDelPaquete" class="invalid-feedback">
+                  Por favor ingrese el ancho del paquete en centímetros.
+                </div>
               </div>
             </div>
 
@@ -213,15 +224,17 @@
                   id="altoDelPaquete"
                   required
                 />
-              </div>
-              <div id="validacionAltoDelPaquete" class="invalid-feedback">
-                Por favor ingrese el alto del paquete en centímetros.
+                <div id="validacionAltoDelPaquete" class="invalid-feedback">
+                  Por favor ingrese el alto del paquete en centímetros.
+                </div>
               </div>
             </div>
           </div>
 
           <div class="mb-3">
-            <p class="fw-bold">Tipo de Envío</p>
+            <p class="fw-bold">
+              Tipo de Envío <abbr title="Este campo es obligatorio">*</abbr>
+            </p>
             <div class="form-check">
               <input
                 class="form-check-input"
@@ -241,14 +254,16 @@
                 required
               />
               <label class="form-check-label" for="envioUrgente">Urgente</label>
-            </div>
-            <div id="validacionTipoDeEnvio" class="invalid-feedback">
-              Por favor seleccione el tipo de envío deseado.
+              <div id="validacionTipoDeEnvio" class="invalid-feedback">
+                Por favor seleccione el tipo de envío deseado.
+              </div>
             </div>
           </div>
 
           <div class="mb-3">
-            <p class="fw-bold">Método de Pago</p>
+            <p class="fw-bold">
+              Método de Pago <abbr title="Este campo es obligatorio">*</abbr>
+            </p>
             <div class="form-check">
               <input
                 class="form-check-input"
@@ -279,15 +294,16 @@
               <label class="form-check-label" for="checkTarjetaDeCredito">
                 Tarjeta de credito
               </label>
-            </div>
-            <div id="validacionTipoDePago" class="invalid-feedback">
-              Por favor seleccione un tipo de pago.
+              <div id="validacionTipoDePago" class="invalid-feedback">
+                Por favor seleccione un tipo de pago.
+              </div>
             </div>
           </div>
 
           <div class="mb-3">
             <label for="fechaDeEnvio" class="form-label fw-bold"
-              >Fecha de Envío</label
+              >Fecha de Envío
+              <abbr title="Este campo es obligatorio">*</abbr></label
             >
             <input
               type="date"

@@ -50,16 +50,32 @@
                     Envíos
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/paginas/envioForm.html">Formulario</a></li>
                     <li>
-                      <a class="dropdown-item" href="/paginas/tracking.html">Rastrear Envio</a>
+                      <a class="dropdown-item" href="/paginas/envioForm.html"
+                        >Formulario</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/paginas/tracking.html"
+                        >Rastrear Envio</a
+                      >
                     </li>
                   </ul>
                 </li>
               </ul>
             </div>
-            <a class="nav-link active" aria-current="page" href="/paginas/servicios.html">Servicios</a>
-            <a class="nav-link active" aria-current="page" href="/paginas/info.html">Sobre nosotros</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/paginas/servicios.html"
+              >Servicios</a
+            >
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/paginas/info.html"
+              >Sobre nosotros</a
+            >
           </div>
         </div>
       </div>
@@ -91,29 +107,35 @@
 
         <div class="border-top border-dark-subtle">
           <h2 class="fs-3 text-center pt-2 m-0">Contáctanos</h2>
-          <form>
+          <form id="formConsulta" novalidate>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label fs-5"
-                >Su email</label
+              <label for="emailUsuario" class="form-label fs-5"
+                >Su email <abbr title="Ingrese un email válido">*</abbr></label
               >
               <input
                 type="email"
                 class="form-control"
-                id="exampleFormControlInput1"
+                id="emailUsuario"
                 placeholder="name@example.com"
                 required
               />
+              <div id="validacionDireccionRemitente" class="invalid-feedback">
+                Por favor ingrese una dirección de email válida.
+              </div>
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label fs-5"
+              <label for="consultaUsuario" class="form-label fs-5"
                 >Escriba su consulta</label
               >
               <textarea
                 class="form-control"
-                id="exampleFormControlTextarea1"
+                id="consultaUsuario"
                 rows="3"
                 required
               ></textarea>
+              <div id="validacionDireccionRemitente" class="invalid-feedback">
+                Por favor ingrese un mensaje válido.
+              </div>
             </div>
             <button
               type="submit"
@@ -126,7 +148,10 @@
       </div>
     </main>
 
-    <footer class="text-center bg-dark text-white py-3" style="margin-top: 20px;">
+    <footer
+      class="text-center bg-dark text-white py-3"
+      style="margin-top: 20px"
+    >
       <div>
         <p class="m-0">&copy; 2024 CTC</p>
       </div>
@@ -137,5 +162,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/info.js"></script>
   </body>
 </html>
